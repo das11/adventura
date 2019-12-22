@@ -1,0 +1,69 @@
+
+:root {
+  --themeColor: #ff7a7f;
+  --white: #fff;
+  --black: rgba(0, 0, 0, 0.84);
+  --lightBlack: #606060;
+  --grey: rgba(0, 0, 0, 0.54);
+  --lightGrey: #9199a4;
+}
+.imgResponsive {
+  width: 100%
+}
+a:hover {
+  cursor: pointer;
+}
+.img-responsive {
+  width: 100%;
+}
+.displayFlex {
+  display: flex;
+}
+
+.postTitleFont {
+  font-size: 16px;
+}
+.postDataFont {
+  font-size: 14px;
+}
+
+.postIconTextFont {
+  font-size: 12px;
+}
+
+.whiteBg {
+  background-color: var(--white);
+}
+
+
+.recent-post-info {
+    display: block;
+    display: -webkit-box;
+    overflow: hidden;
+    max-height: 42px;
+    font-weight: normal;
+    line-height: 19px;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    word-break: break-word;
+    text-overflow: ellipsis;
+    color: var(--lightBlack);
+}
+
+/* SPACING */
+.marginBottom10 {
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 450px) {
+  .postTitleFont {
+    font-size: 22px !important;
+  }
+  .postDataFont {
+    font-size: 16px !important;
+  }
+
+  .postIconTextFont {
+    font-size: 13px !important;
+  }
+}

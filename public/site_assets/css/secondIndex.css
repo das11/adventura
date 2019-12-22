@@ -1,0 +1,238 @@
+/* second index css */
+.popularBlogsContainer {
+  padding: 30px;
+  position: sticky;
+  top: 0;
+}
+.popularListContainer {
+  border-top: 1px solid #ecf0f5;
+}
+.popularList {
+  padding-left: 0px;
+  list-style: none;
+  counter-reset: my-awesome-counter;
+}
+.popularList li {
+  padding-top: 30px;
+  counter-increment: my-awesome-counter;
+  display: flex;
+}
+.popularList li a:hover {
+  text-decoration: none;
+}
+
+.popularList li::before {
+  content: "0" counter(my-awesome-counter);
+  color: var(--themeColor);
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: -10px;
+  margin-right: 10px;
+}
+
+.maxWidth1032 {
+  max-width: 1032px !important;
+}
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.maxWidth1208 {
+  max-width: 1208px;
+}
+.marginAuto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.paddingHorizontal20 {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+.padding0 {
+  padding: 0px;
+}
+.paddingR45 {
+  padding-right: 45px;
+}
+
+.blackFont {
+  color: var(--black);
+  font-weight: 600;
+}
+
+.whiteFont {
+  color: var(--white);
+}
+
+.themeColor {
+  color: var(--themeColor) !important;
+}
+.boldFont {
+  font-weight: bold;
+}
+.navbar-collapse {
+  flex-grow: 0;
+}
+.navbar {
+  justify-content: space-between;
+  margin: 0px auto;
+  padding: 0px;
+}
+.thumb_img {
+  width: 152px;
+}
+.whiteNav {
+  border-bottom: 0;
+}
+
+.fixed {
+  position: sticky;
+  top: 0;
+  z-index: 2000;
+  transform: translateY(-70px);
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.15);
+}
+/* .header {
+  margin-top: 25px !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15) !important;
+} */
+.justifyContentSpaceBetween {
+  display: flex;
+  justify-content: space-between;
+}
+.topicName {
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--black);
+  margin-bottom: -1px;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 22px;
+  color: var(--black);
+}
+.topicName a {
+  color: var(--black);
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+.moreLink,
+.moreLink:hover {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--themeColor);
+  font-size: 15px;
+  margin-bottom: 20px;
+  fill: var(--themeColor);
+}
+.flexCenter {
+  display: flex;
+  align-items: center;
+}
+
+.heroPostsEachSection:not(:last-child) {
+  padding-right: 24px;
+}
+.hero-post-metadata-left {
+  padding: 20px 0px;
+  margin-left: 88px;
+}
+.hero-post-metadata-right {
+  padding: 20px 0px;
+  margin-right: 88px;
+}
+.old-posts-list li:not(:first-child) {
+  border-top: 0px;
+}
+
+.heroPostList li {
+  padding: 0px 0px 25px !important;
+}
+
+.heroPostList li .post-title {
+  font-size: 18px !important;
+}
+.heroPostList li img {
+  width: 100px !important;
+  height: 100px !important;
+}
+.heroPostList li .old-post-data-info {
+  margin-top: 7px !important;
+}
+.heroPostList li .recent-post-info {
+  line-height: 19px !important;
+}
+
+.old-post-info-container .eachFragment:not(:last-child) {
+  padding-right: 24px;
+}
+.categoryListThumbImage {
+  width: 152px !important;
+  height: 123px !important;
+}
+
+/* popular section css */
+.popularBlogsContainer {
+  padding: 32px 0px 32px 32px;
+  position: sticky;
+  top: 0;
+}
+.popularBlogsHeader {
+  font-size: 24px;
+  margin: 0;
+  padding-bottom: 15px;
+  text-transform: capitalize;
+  font-weight: bold;
+  /* font-size: 22px; */
+  color: var(--black);
+}
+.popularListContainer {
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+.popularList {
+  padding-left: 0px;
+  list-style: none;
+  counter-reset: my-awesome-counter;
+}
+.popularList li {
+  padding-top: 30px;
+  counter-increment: my-awesome-counter;
+  display: flex;
+}
+.popularList li a:hover {
+  text-decoration: none;
+}
+
+.popularList li::before {
+  content: "0" counter(my-awesome-counter);
+  color: var(--lightGrey);
+  opacity: 0.5;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: -10px;
+  margin-right: 10px;
+}
+
+.overlayParent {
+  position: relative;
+  overflow: hidden;
+}
+.overlayParent img {
+  min-height: 350px;
+  width: 100%;
+}
+.overlayParent:hover .overlay {
+  transform: translate3d(0px, 0%, 0px);
+}
+.overlay {
+  /* z-index: 1000; */
+  position: absolute;
+  transform: translate3d(0px, 71%, 0px);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white !important;
+  overflow: hidden;
+  margin-left: 0;
+  padding: 20px;
+  transition: transform 0.4s ease-in-out;
+}
