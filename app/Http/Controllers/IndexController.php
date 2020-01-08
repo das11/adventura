@@ -9,6 +9,7 @@ use App\Listings;
 use App\ContactUS;
 use App\Article;
 use App\packages;
+use App\offers;
 
 use Illuminate\Http\Request;
 
@@ -211,9 +212,12 @@ class IndexController extends Controller
         // Replace if you have your own Sender ID, else donot change
         $senderid  =  "GENTLE";
 
+        $offer = $package->packagecost;
+        $offer = $offer - 1000;
+
 
         // Replace with your Message content
-        $message   =  "Trip to " . $package->packagename . " available exclusively at " . $package->packagecost . " for you !";
+        $message   =  "Trip to " . $package->packagename . " available exclusively at " . $offer . " for you !";
         $message = urlencode($message);
 
         // For Plain Text, use "txt" ; for Unicode symbols or regional Languages like hindi/tamil/kannada use "uni"
@@ -247,6 +251,15 @@ class IndexController extends Controller
         // return redirect("/listings");
 
 
+
+    }
+
+    public function test(){
+
+        $offer = new offers;
+        $offer->offerid = 100;
+
+        $offer->save();
 
     }
 

@@ -344,3 +344,4 @@ Route::get('frontend', "IndexController@viewStatic");
 	// Cipher Adventura Routes 
 	Route::get("/package", "IndexController@package");
 	Route::get("/signup", "IndexController@signup");
+	Route::get("/test", "IndexController@test");

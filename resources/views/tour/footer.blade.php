@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="single-footer-widget">
-                        <h5 class="footer_title">Cipher Adventura
+                        <h5 class="footer_title">Adventura
                         </h5>
                         <p class="about-text">The world has become so fast paced that people don’t want to stand by reading a page of information, they would much rather look at a presentation and understand the message. It has come to a point where images and videos are used more to </p>
                     </div>
@@ -77,7 +77,7 @@
             <div class="row">
                 <div class="col-lg-6 col-md-12">
                     <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://cipherstudios.xyz" target="_blank">Cipher Studios</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://cipherstudios.xyz" target="_blank">Group 3</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 </p>
                 </div>
